@@ -45,6 +45,10 @@ function equals (a, b) {
         }
         break;
     case 'decl':
+        if(a.prop == b.prop) {
+            a.value = b.value;
+        }
+            
         if (a.prop !== b.prop || a.value !== b.value) {
             return false;
         }
